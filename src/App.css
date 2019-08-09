@@ -1,33 +1,90 @@
-.App {
+h1, h2, h3, h4, h5 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1, h2, h3, a, .is-tinted {
+  color: #F56F86;
+}
+
+a:hover {
+  color: #ECC1C8;; 
+}
+
+footer {
+  padding-top: 2rem;
+}
+
+.block {
+  padding: 2rem;
+}
+
+/* Header */
+
+.page-title {
+  margin-bottom: 2rem;
+  font-size: 64px;
+}
+
+.black {
+  background: #202020;
+  color: #e1e1e1;
+}
+
+/* Projects */
+
+.project-list {
+  padding-top: 10rem;
+}
+
+.project-list h2 {
+  position: fixed;
+  top: 1rem;
+  z-index: -1;
+  color: #F56F866B;
+  font-size: 8rem;
+  word-wrap: anywhere;
+}
+
+.project {
+  padding-bottom: 4rem;
+}
+
+.project-thumb {
+  margin-bottom: 2rem;
+  max-width: 300px;
+  max-height: 400px;
+  object-fit: contain;
+  background: #f2f2f2;
+}
+
+/* Modifiers */
+
+.is-center-content {
+  justify-content: center;
+}
+
+.is-center-aligned {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.is-bold {
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.has-shadow {
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.has-border {
+  border-width: 4px;
+  border-color: #f56f86;
+  border-style: dashed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.has-round-corners {
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
 }
