@@ -12,12 +12,14 @@ export class Project extends Component {
             <article className="project">
                 <div className="row">
                     <div className="col-md is-center-aligned">
-                        <img className="project-thumb has-shadow" src={img}/>
+                        <img className="project-thumb has-shadow" src={img} alt={"Imagem do projeto: " + name}/>
                     </div>
                     <div className="col-md">
-                        <h4>{name}</h4>
-                        <p className="is-tinted">{tags}</p>
-                        <p>{desc}</p>
+                        <div className="project-content">
+                            <h4>{name}</h4>
+                            <p className="is-tinted">{tags}</p>
+                            <p>{desc}</p>
+                        </div>
                     </div>
                 </div>
             </article>

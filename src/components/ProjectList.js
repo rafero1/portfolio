@@ -5,9 +5,10 @@ export class ProjectList extends Component {
     render() {
 
         // Titulo dessa lista
+        var title_s = this.props.title;
         var title;
-        if (this.props.title) {
-            title = <h2>{this.props.title}</h2>;
+        if (title_s) {
+            title = <h2 className="is-center-aligned">{this.props.title}</h2>;
         }
 
         // Projetos que deve mostrar
@@ -23,11 +24,17 @@ export class ProjectList extends Component {
         });
 
         return (
-            <section className="project-list block">
-                {title}
-                <div className="row">
-                    <div className="col">
-                        {projects}
+            <section id="projects" className="project-list white block">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            {title}
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            {projects}
+                        </div>
                     </div>
                 </div>
             </section>
