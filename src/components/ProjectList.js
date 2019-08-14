@@ -12,19 +12,24 @@ export class ProjectList extends Component {
         }
 
         // Projetos que deve mostrar
-        const projects = [];
-        this.props.projects.forEach((item) => {
-            projects.push(
-                <div className="row">
+        const projects = this.props.projects.map((item) => {
+            return (
+                <div key={item.name} className="row">
                     <div className="col">
-                        <Project name={item.name} tags={item.tags} desc={item.desc} img={item.img}></Project>
+                        <Project
+                            name={item.name}
+                            tags={item.tags}
+                            desc={item.desc}
+                            folder={item.folder}
+                            imgs={item.imgs}
+                        ></Project>
                     </div>
                 </div>
             );
         });
 
         return (
-            <section id="projects" className="project-list white block">
+            <section id="projects" className="project-list white">
                 <div className="container">
                     <div className="row">
                         <div className="col">

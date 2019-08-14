@@ -12,7 +12,7 @@ A branch `master` é o src real do projeto. A `gh-pages` é gerada e automaticam
 npm start
 ```
 
-Inicia o servidor local para desenvolvimento
+Inicia o servidor local para desenvolvimento.
 
 ``` node
 npm run build
@@ -28,5 +28,6 @@ Realiza o deploy da build construída para a branch `gh-pages` desse repositóri
 
 ## Recursos
 
-[Google Fonts](https://fonts.google.com/)
-[Google Icons](https://material.io/resources/icons/?style=baseline)
+* [viewerjs](https://github.com/fengyuanchen/viewerjs)
+* [Google Fonts](https://fonts.google.com/)
+* [Google Icons](https://material.io/resources/icons/?style=baseline)

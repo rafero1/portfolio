@@ -34,6 +34,22 @@ h2 {
   font-size: 4rem;
 }
 
+p .material-icons{
+  vertical-align: text-bottom;
+}
+
+#contact-info li {
+  list-style-type: none;
+}
+
+nav a.btn {
+  margin: .5rem;
+}
+
+.block {
+  padding: 1rem;
+}
+
 /* Buttons */
 
 .btn-custom {
@@ -64,10 +80,6 @@ h2 {
   padding: .5rem .5rem .15rem .5rem;
 }
 
-.block {
-  padding: 2rem;
-}
-
 .content {
   font-size: 1.2rem;
 }
@@ -77,10 +89,13 @@ h2 {
 .site-logo {
   min-width: 200px;
   max-width: 100%;
-  margin-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
 }
 
 .page-header {
+  min-height: 100vh;
   border-bottom: 8px solid #F56F86;
 }
 
@@ -103,7 +118,7 @@ h2 {
 /* Projects */
 
 .project-list {
-  padding: 8rem 2rem;
+  padding: 8rem 0;
 }
 
 .project {
@@ -111,26 +126,27 @@ h2 {
   padding-bottom: 2rem;
 }
 
+.thumb-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .project-thumb {
   width: 100%;
   height: 300px;
   margin-bottom: 2rem;
   object-fit: cover;
-  background: #f2f2f2;
+  object-position: center;
+  background: #F56F86;
+  transition: .3s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.project-thumb:hover {
+  padding: 1rem;
 }
 
 .project-content {
   padding: 1rem;
-}
-
-/* Nav */
-
-nav li {
-  list-style-type: none;
-}
-
-nav a.btn {
-  margin: .5rem;
 }
 
 /* Modifiers */

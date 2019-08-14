@@ -9,12 +9,15 @@ export class ContactInfo extends Component {
                         <div className="col">
                             <h2>Contato</h2>
                             <div className="content">
-                                <p>Se quiser me contactar, pode mandar um email ou dar um oi no <i>zap</i>. :)</p>
+                                <p>Se quiser me contactar, pode mandar um email ou dar um oi no <i>zap</i>.</p>
                                 <p>
-                                    <a href="mailto:rfl.avilar@outlook.com">rfl.avilar@outlook.com</a> / <a href="tel:85999897611">(85) 99989-7611</a>
+                                    <i className="material-icons">alternate_email</i> <a href="mailto:rfl.avilar@outlook.com">rfl.avilar@outlook.com</a>
                                 </p>
                                 <p>
-                                    <a href="https://github.com/rafero1">GitHub</a> / <a href="https://linkedin.com/in/rafael-avilar">LinkedIn</a>
+                                    <i className="material-icons">phone</i> <a href="tel:85999897611">(85) 99989-7611</a>
+                                </p>
+                                <p>
+                                    <i className="material-icons">public</i> <a href="https://github.com/rafero1">GitHub</a> / <a href="https://linkedin.com/in/rafael-avilar">LinkedIn</a>
                                 </p>
                             </div>
                         </div>
