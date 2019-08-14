@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from './Button';
 import Viewer from 'viewerjs';
 
 export class Project extends Component {
@@ -18,6 +19,7 @@ export class Project extends Component {
                     folder + filename
                 );
             }),
+            link: this.props.link,
             id:   'img-' + translateId(this.props.name)
         };
     }
@@ -52,6 +54,12 @@ export class Project extends Component {
             } else return null;
         });
 
+        // O botão de acesso para o projeto.
+        var link = null;
+        if (this.state.link != null) {
+            link = <a className="link" href={this.state.link} target="_blank" rel="noopener noreferrer"><i className="material-icons">open_in_new</i> Acessar</a>;
+        }
+
         return (
             <article className="project">
                 <div className="row">
@@ -64,6 +72,7 @@ export class Project extends Component {
                             <h4>{this.state.name}</h4>
                             <p className="is-tinted">{this.state.tags}</p>
                             <p>{this.state.desc}</p>
+                            {link}
                         </div>
                     </div>
                 </div>

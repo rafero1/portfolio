@@ -20,6 +20,7 @@ export class ProjectList extends Component {
                             name={item.name}
                             tags={item.tags}
                             desc={item.desc}
+                            link={item.link}
                             folder={item.folder}
                             imgs={item.imgs}
                         ></Project>

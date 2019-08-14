@@ -6,7 +6,7 @@ export class Button extends Component {
         const text = this.props.text;
         const goto = this.props.goto;
 
-        return <a className="btn btn-custom btn-lg" role="button" href={goto}>{text}</a>
+         return <a className="btn btn-custom btn-lg" role="button" href={goto}>{text}</a>
     }
 }
 

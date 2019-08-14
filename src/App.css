@@ -34,8 +34,8 @@ h2 {
   font-size: 4rem;
 }
 
-p .material-icons{
-  vertical-align: text-bottom;
+.link *{
+  vertical-align: middle;
 }
 
 #contact-info li {
@@ -142,6 +142,7 @@ nav a.btn {
 }
 
 .project-thumb:hover {
+  cursor: pointer;
   padding: 1rem;
 }
 
