@@ -90,12 +90,11 @@ nav a.btn {
   min-width: 200px;
   max-width: 100%;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 
 }
 
 .page-header {
-  min-height: 100vh;
   border-bottom: 8px solid #F56F86;
 }
 
