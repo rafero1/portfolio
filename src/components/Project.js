@@ -20,7 +20,7 @@ export class Project extends Component {
                 );
             }),
             link: this.props.link,
-            id:   'img-' + translateId(this.props.name)
+            id: 'img-' + translateId(this.props.name)
         };
     }
 
